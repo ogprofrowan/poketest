@@ -1,0 +1,2 @@
+# pokebonded
+pokeemerald decomp project.
