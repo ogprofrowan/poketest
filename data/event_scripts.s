@@ -1058,3 +1058,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/HouseThree/scripts.inc"
+
+	.include "data/maps/ChrysantiaCity/scripts.inc"
+
+	.include "data/maps/ChrysantiaCity_House1/scripts.inc"
+
+	.include "data/maps/ChrysantiaCity_House2/scripts.inc"
+
+	.include "data/maps/PlayerHouse/scripts.inc"
+
+	.include "data/maps/Route2/scripts.inc"

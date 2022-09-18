@@ -159,7 +159,7 @@ static const struct OamData sOamData_Arrow =
     .y = 0,
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
-    .mosaic = FALSE,
+    .mosaic = 0,
     .bpp = ST_OAM_4BPP,
     .shape = SPRITE_SHAPE(8x8),
     .x = 0,
@@ -181,7 +181,11 @@ static const struct SpriteFrameImage sPicTable_Arrow[] =
     obj_frame_tiles(sArrowRight_Gfx)
 };
 
+// <<<<<<< HEAD
 const struct SpritePalette gSpritePalette_Arrow =
+// =======
+// const struct SpritePalette sSpritePalette_Arrow =
+// >>>>>>> 02ac6bbeade9eabb92bc1e533af9ac438860db73
 {
     sArrow_Pal, PALTAG_ARROW
 };
@@ -217,7 +221,11 @@ static const union AnimCmd *const sAnims_Arrow[] =
     [ARROW_RIGHT] = sAnim_Arrow_Right,
 };
 
+// <<<<<<< HEAD
 const struct SpriteTemplate gSpriteTemplate_Arrow =
+// =======
+// const struct SpriteTemplate sSpriteTemplate_Arrow =
+// >>>>>>> 02ac6bbeade9eabb92bc1e533af9ac438860db73
 {
     .tileTag = TAG_NONE,
     .paletteTag = PALTAG_ARROW,

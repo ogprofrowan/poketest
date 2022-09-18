@@ -17,6 +17,11 @@
       "direction": "up",
       "offset": 0,
       "map": "MAP_ROUTE101"
+    },
+    {
+      "direction": "left",
+      "offset": -11,
+      "map": "MAP_CHRYSANTIA_CITY"
     }
   ],
   "object_events": [
@@ -145,6 +150,13 @@
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 36,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_HOUSE_THREE",
       "dest_warp_id": 0
     }
   ],

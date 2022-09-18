@@ -1,0 +1,46 @@
+mapscripts ChrysantiaCity_MapScripts{
+
+}
+
+script ChrysantiaCity_CitySign {
+    lockall
+    msgbox((format("Chrysantia City - the city that endears all.")))
+    releaseall
+}
+
+script PeonyGivePokemon {
+    lockall
+    showmonpic(SPECIES_UMBREON, 10, 3)
+    msgbox((format("I think Jasmine would enjoy going on more adventures. Will you take her with you?")), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_UMBREON, 4, ITEM_SOOTHE_BELL)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Received Umbreon!")
+            removeobject(1)
+            setflag(FLAG_UNUSED_0x020)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Received Umbreon!")
+            removeobject(1)
+            setflag(FLAG_UNUSED_0x020)
+        }
+        else{
+            hidemonpic
+            msgbox("You don't have room.")
+        }
+        }
+    else{
+    hidemonpic
+    msgbox(Jasmine_NotChosen)
+    }
+    hidemonpic
+    waitmessage
+    releaseall
+    end
+}
+
+text Jasmine_NotChosen {
+    "Oh, okay. I understand."
+} 
